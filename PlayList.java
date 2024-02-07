@@ -85,7 +85,7 @@ class PlayList {
         }
         for (int i = 1; i < title.length(); i++) {
             if (title.charAt(i) < 60) {
-                validInput += ((title.charAt(i) - 32));
+                validInput += ((title.charAt(i) + 32));
             } else {
                 validInput += title.charAt(i);
             }
