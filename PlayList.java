@@ -78,13 +78,13 @@ class PlayList {
      *  If such a track is not found, returns -1. */
     public int indexOf(String title) {
         String validInput = "";
-        if (title.charAt(0) > 96 ) {
+        if (title.charAt(0) > 'a' ) {
             validInput+= (title.charAt(0) - 32);
         } else {
             validInput += title.charAt(0);
         }
         for (int i = 1; i < title.length(); i++) {
-            if (title.charAt(i) < 97) {
+            if (title.charAt(i) < 'a') {
                 validInput += ((title.charAt(i) + 32));
             } else {
                 validInput += title.charAt(i);
