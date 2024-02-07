@@ -92,7 +92,7 @@ class PlayList {
         }
 
         for (int i = 0; i < size; i++) {
-            if (tracks[i].getTitle() == validInput) {
+            if (tracks[i].getTitle().equals(validInput)) {
                 return i;
             }
 
