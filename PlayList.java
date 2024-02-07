@@ -79,13 +79,13 @@ class PlayList {
     public int indexOf(String title) {
         String validInput = "";
         if (title.charAt(0) > 'a' ) {
-            validInput+= (title.charAt(0) - 32);
+            validInput+= ((char)title.charAt(0) - 32);
         } else {
             validInput += title.charAt(0);
         }
         for (int i = 1; i < title.length(); i++) {
             if (title.charAt(i) < 'a') {
-                validInput += ((title.charAt(i) + 32));
+                validInput += ((char)(title.charAt(i) + 32));
             } else {
                 validInput += title.charAt(i);
             }
