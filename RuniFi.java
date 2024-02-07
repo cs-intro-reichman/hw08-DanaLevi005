@@ -60,6 +60,9 @@ class RuniFi {
         myList.add(newList);
         display("My list after merging with new list", myList);
 
+        System.out.println("\nThe shortest track in my list is " + myList.minIndex(2));
+        System.out.println("\nThe shortest track in my list is " + myList.minIndex(3));
+
         // Tests the ability to find the track with the shortest duration
         System.out.println("\nThe shortest track in my list is " + myList.titleOfShortestTrack());
 
